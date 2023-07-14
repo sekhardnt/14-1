@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="gurulognin">
+    <classes>
+     
+      <class name="Testng.selenium1.guru">
+		  <methods>
+			  <include name="opening_browser"/>
+			  <include name="login"/>
+			  <include name="verifylogin"/>
+		  </methods>
+      </class>
+    </classes>
+  </test> 
+  <test  name="Editprofile">
+    <classes>
+      <class name="Testng.selenium1.guru">
+		  <methods>
+			  <exclude name="verifyedit"/>
+			  </methods>
+			  </class>
+    </classes>
+  </test> <!-- Test -->
+  <test  name="Google Page">
+    <classes>
+      <class name="Testng.selenium1.day1">
+		  <methods>
+			  <include name="google"/>
+		  </methods>
+      </class>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> 
